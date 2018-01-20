@@ -92,16 +92,8 @@ busuanzi_count:
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
-livere_uid: MTAyMC8yOTU1OS82MTI3
-needmoreshare2:
-  enable: true
-  float:
-    enable: true
-    options:
-      iconStyle: box
-      boxForm: horizontal
-      position: middleRight
-      networks: Weibo,Wechat,Evernote,Twitter,Facebook
+      #livere_uid: MTAyMC8yOTU1OS82MTI3
+hypercomments_id: 100183
 rating:
   enable: true
   id:     9113
@@ -111,3 +103,7 @@ reading_progress:
   enable: true
   color: "#37c6c0"
   height: 2px
+#jiathis:
+  ##uid: Get this uid from http://www.jiathis.com/
+add_this_id: ra-5a63435170f71e5f
+baidu_analytics: e6edd267b4f1c93366268199e68fce7f
