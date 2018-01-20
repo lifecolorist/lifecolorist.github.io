@@ -20,12 +20,15 @@ These instructions will get you a copy of the project up and running on your loc
 ## Deployment
 npm install hexo-generator-searchdb --save
 npm install hexo-abbrlink --save
+npm install hexo-generator-feed --save
 
+git clone https://github.com/theme-next/hexo-theme-next themes/next
 ### theme
 git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu
 git clone https://github.com/theme-next/theme-next-han source/lib/Han
 git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton
 git clone https://github.com/theme-next/theme-next-pace source/lib/pace
+git clone https://github.com/theme-next/theme-next-reading-progress source/lib/reading_progress
 
 ## Built With
 
