@@ -1,4 +1,11 @@
 description: "Everything not saved will be lost."
+favicon:
+  small: /images/avatar.png
+  medium: /images/avatar.png
+  #apple_touch_icon: /images/apple-touch-icon-next.png
+  #safari_pinned_tab: /images/logo.svg
+  #android_manifest: /images/manifest.json
+  #ms_browserconfig: /images/browserconfig.xml
 custom_file_path:
   styles: source/_data/styles.styl
   #mixins: source/_data/mixins.styl
@@ -95,3 +102,12 @@ needmoreshare2:
       boxForm: horizontal
       position: middleRight
       networks: Weibo,Wechat,Evernote,Twitter,Facebook
+rating:
+  enable: true
+  id:     9113
+  color:  fc6423
+baidu_push: true
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
