@@ -2,10 +2,11 @@ description: "Everything not saved will be lost."
 
 menu:
   home: / || home
-  about: /about/ || user
+  #  about: /about/ || user
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
+  top: /top/ || fire
   
 scheme: Mist
 #scheme: Gemini
@@ -26,10 +27,10 @@ post_copyright:
   enable: true
   license: CC BY-NC 4.0
   license_url: https://creativecommons.org/licenses/by-nc/4.0
-#pace_theme: pace-theme-minimal
 motion:
   async: true
 pace: true
+pace_theme: pace-theme-flash
 
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
@@ -55,3 +56,28 @@ footer:
 
   # Icon between year and copyright info.
   icon: heart
+# Show number of visitors to each article.
+# You can visit https://leancloud.cn get AppID and AppKey.
+leancloud_visitors:
+  enable: true
+  app_id: P2S6x6Lb5G1d7sKgDVzid2oX-gzGzoHsz
+  app_key: 2iRU4cd0dGDOzDvC6CjRQsSi
+# Show PV/UV of the website/page with busuanzi.
+# Get more information on http://ibruce.info/2015/04/04/busuanzi/
+busuanzi_count:
+  # count values only if the other configs are false
+  enable: true
+  # custom uv span for the whole site
+  site_uv: true
+  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_footer:
+  # custom pv span for the whole site
+  site_pv: true
+  site_pv_header: <i class="fa fa-eye"></i>
+  site_pv_footer:
+  # custom pv span for one page only
+  page_pv: false
+  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_footer:
+
+livere_uid: MTAyMC8yOTU1OS82MTI3
