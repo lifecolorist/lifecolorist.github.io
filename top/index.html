@@ -114,27 +114,27 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta name="description" content="Everything not saved will be lost.">
+<meta name="description" content="AV.initialize(&quot;P2S6x6Lb5G1d7sKgDVzid2oX-gzGzoHsz&quot;, &quot;2iRU4cd0dGDOzDvC6CjRQsSi&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://lifecolorist.github.io/tags/index.html">
+<meta property="og:title" content="Top 50">
+<meta property="og:url" content="https://lifecolorist.github.io/top/index.html">
 <meta property="og:site_name" content="LifeColorist">
-<meta property="og:description" content="Everything not saved will be lost.">
+<meta property="og:description" content="AV.initialize(&quot;P2S6x6Lb5G1d7sKgDVzid2oX-gzGzoHsz&quot;, &quot;2iRU4cd0dGDOzDvC6CjRQsSi&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-20T07:48:28.156Z">
+<meta property="og:updated_time" content="2018-01-20T10:51:17.623Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="Everything not saved will be lost.">
+<meta name="twitter:title" content="Top 50">
+<meta name="twitter:description" content="AV.initialize(&quot;P2S6x6Lb5G1d7sKgDVzid2oX-gzGzoHsz&quot;, &quot;2iRU4cd0dGDOzDvC6CjRQsSi&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
 
 
 
 
 
 
-  <link rel="canonical" href="https://lifecolorist.github.io/tags/"/>
+  <link rel="canonical" href="https://lifecolorist.github.io/top/"/>
 
 
-  <title>tags | LifeColorist</title>
+  <title>Top 50 | LifeColorist</title>
   
 
 
@@ -309,7 +309,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
+	<h1 class="post-title" itemprop="name headline">Top 50</h1>
 
 
 
@@ -321,28 +321,31 @@
       <div class="post-body han-init-context">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                3 tags in total
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/cpp/" style="font-size: 12px; color: #ccc">cpp</a> <a href="/tags/linux/" style="font-size: 12px; color: #ccc">linux</a> <a href="/tags/stl/" style="font-size: 12px; color: #ccc">stl</a>
-            </div>
-          </div>
+          <p><div id="top"></div></p>
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script>AV.initialize("P2S6x6Lb5G1d7sKgDVzid2oX-gzGzoHsz", "2iRU4cd0dGDOzDvC6CjRQsSi");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(50);
+  query.find().then(function (todo) {
+    for (var i=0;i<50;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      var content="<a href='"+"https://reuixiy.github.io"+url+"'>"+title+"</a>"+"<br />"+"<font color='#555'>"+"阅读次数："+time+"</font>"+"<br /><br />";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
+
         
       </div>
       

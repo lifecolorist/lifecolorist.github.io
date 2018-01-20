@@ -111,30 +111,31 @@
 
 
   
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="cpp,stl," />
 
 
-<meta name="description" content="Everything not saved will be lost.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://lifecolorist.github.io/tags/index.html">
+<meta name="description" content="什么情况算失效当迭代器指向的元素与插入或删除操作之前的元素不同时，就认为该迭代器失效。具体的原因有两种:  由于插入/删除操作做成容器内存重新分配 原有的迭代器指向了与操作之前不同的元素  指针和引用指向的都是某个内存位置的元素，所以当原来指向的内存位置的值发生变化，就会失效">
+<meta name="keywords" content="cpp,stl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c++容器迭代器失效分析">
+<meta property="og:url" content="https://lifecolorist.github.io/posts/3244/index.html">
 <meta property="og:site_name" content="LifeColorist">
-<meta property="og:description" content="Everything not saved will be lost.">
+<meta property="og:description" content="什么情况算失效当迭代器指向的元素与插入或删除操作之前的元素不同时，就认为该迭代器失效。具体的原因有两种:  由于插入/删除操作做成容器内存重新分配 原有的迭代器指向了与操作之前不同的元素  指针和引用指向的都是某个内存位置的元素，所以当原来指向的内存位置的值发生变化，就会失效">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-01-20T07:48:28.156Z">
+<meta property="og:updated_time" content="2018-01-20T10:11:31.520Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="Everything not saved will be lost.">
+<meta name="twitter:title" content="c++容器迭代器失效分析">
+<meta name="twitter:description" content="什么情况算失效当迭代器指向的元素与插入或删除操作之前的元素不同时，就认为该迭代器失效。具体的原因有两种:  由于插入/删除操作做成容器内存重新分配 原有的迭代器指向了与操作之前不同的元素  指针和引用指向的都是某个内存位置的元素，所以当原来指向的内存位置的值发生变化，就会失效">
 
 
 
 
 
 
-  <link rel="canonical" href="https://lifecolorist.github.io/tags/"/>
+  <link rel="canonical" href="https://lifecolorist.github.io/posts/3244/"/>
 
 
-  <title>tags | LifeColorist</title>
+  <title>c++容器迭代器失效分析 | LifeColorist</title>
   
 
 
@@ -304,59 +305,239 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lifecolorist.github.io/posts/3244/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lifecolorist">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LifeColorist">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body han-init-context">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                3 tags in total
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/cpp/" style="font-size: 12px; color: #ccc">cpp</a> <a href="/tags/linux/" style="font-size: 12px; color: #ccc">linux</a> <a href="/tags/stl/" style="font-size: 12px; color: #ccc">stl</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">c++容器迭代器失效分析</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-03-24T17:06:07+08:00">2016-03-24</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习心得/" itemprop="url" rel="index"><span itemprop="name">学习心得</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/posts/3244/" class="leancloud_visitors" data-flag-title="c++容器迭代器失效分析">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="什么情况算失效"><a href="#什么情况算失效" class="headerlink" title="什么情况算失效"></a>什么情况算失效</h1><p>当迭代器指向的元素与插入或删除操作之前的元素不同时，就认为该迭代器失效。<br>具体的原因有两种:</p>
+<ul>
+<li>由于插入/删除操作做成容器内存重新分配</li>
+<li>原有的迭代器指向了与操作之前不同的元素</li>
+</ul>
+<p>指针和引用指向的都是某个内存位置的元素，所以当原来指向的内存位置的值发生变化，就会失效<br><a id="more"></a></p>
+<h1 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h1><p>首先分析一下 vector 的迭代器：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T,<span class="keyword">typename</span> Alloc=alloc&gt;</span><br><span class="line">class <span class="built_in">vector</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">typedef</span> T value_type;</span><br><span class="line">    <span class="keyword">typedef</span> value_type* iterator;</span><br><span class="line">...</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>由此可以知道，vector 的迭代器就是指针<br>如果插入后内存发生重新分配，则所有的迭代器、引用和指针都失效。<br>如果内存没有重新分配，则：</p>
+<ol>
+<li>插入/删除操作后，插入点之前的元素并不受影响，所以其迭代器，引用和指针仍然有效</li>
+<li>插入点之后的元素位置发生变化，所以插入点之后元素的迭代器，引用和指针都会失效</li>
+<li>插入/删除元素后，尾后迭代器失效</li>
+</ol>
+<h1 id="list"><a href="#list" class="headerlink" title="list"></a>list</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>,<span class="title">class</span> <span class="title">Ref</span>,<span class="title">class</span> <span class="title">Ptr</span>&gt;</span></span><br><span class="line"><span class="class"><span class="title">struct</span> __<span class="title">list_iterator</span> &#123;</span></span><br><span class="line">...</span><br><span class="line">    <span class="keyword">typedef</span> __list_node&lt;T&gt;* link_type;</span><br><span class="line">...</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T,<span class="keyword">typename</span> Alloc=alloc&gt;</span><br><span class="line">class <span class="built_in">list</span> &#123;</span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">    <span class="keyword">typedef</span> __list_node&lt;T&gt; list_node;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">typedef</span> list_node* link_type;</span><br><span class="line">    <span class="function">iterator <span class="title">begin</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> (link_type)((*node).next); &#125;</span><br><span class="line">    <span class="function">iterator <span class="title">end</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> node;&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">    link_type node;</span><br><span class="line">...</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>除了插入/删除点之外，容器其他位置的迭代器（包括尾后迭代器和首前迭代器）、引用和指针仍然有效</p>
+<h1 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T,<span class="keyword">typename</span> Alloc=alloc&gt;</span><br><span class="line">struct __deque_iterator &#123;</span><br><span class="line">...</span><br><span class="line">    <span class="keyword">typedef</span> T** map_pointer;</span><br><span class="line">    </span><br><span class="line">    T* cur;</span><br><span class="line">    T* first;</span><br><span class="line">    T* last;</span><br><span class="line">    map_pointer node;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>插入<ul>
+<li>插入到除首尾位置之外的任何位置都会导致迭代器、指针和引用失效 —— <em>插入会导致插入点之前或插入点之后的元素发生移动，根据插入点之前的元素个数和插入点之后的元素个数来确定移动之前还是之后的元素</em></li>
+<li>如果在首尾位置添加元素，迭代器会失效，但指向存在元素的引用和指针不会失效 —— <em>因为插入可能导致重新分配 map，迭代器发生变化</em></li>
+</ul>
+</li>
+<li>删除：<ul>
+<li>首尾位置之外的任何位置删除元素都会导致迭代器、指针和引用失效。—— <em>根据删除点之前和之后的元素个数不同移动之前或之后的元素</em></li>
+<li>如果删除尾元素，则尾后迭代器失效，但其他迭代器、引用和指针不受影响；如果删除首元素，则其他迭代器、引用和指针也不受影响。</li>
+</ul>
+</li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    lifecolorist
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://lifecolorist.github.io/posts/3244/" title="c++容器迭代器失效分析">https://lifecolorist.github.io/posts/3244/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0" rel="external nofollow" target="_blank">CC BY-NC 4.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/cpp/" rel="tag"># cpp</a>
+          
+            <a href="/tags/stl/" rel="tag"># stl</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/27287/" rel="next" title="自己编写more">
+                <i class="fa fa-chevron-left"></i> 自己编写more
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/42368/" rel="prev" title="Hexo Next 主题优化">
+                Hexo Next 主题优化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8yOTU1OS82MTI3"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -379,8 +560,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -463,6 +653,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么情况算失效"><span class="nav-number">1.</span> <span class="nav-text">什么情况算失效</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vector"><span class="nav-number">2.</span> <span class="nav-text">vector</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#list"><span class="nav-number">3.</span> <span class="nav-text">list</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#deque"><span class="nav-number">4.</span> <span class="nav-text">deque</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -635,6 +841,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
