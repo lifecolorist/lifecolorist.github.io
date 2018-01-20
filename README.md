@@ -24,6 +24,8 @@ npm install hexo-abbrlink --save
 ### theme
 git clone https://github.com/theme-next/theme-next-pangu.git source/lib/pangu
 git clone https://github.com/theme-next/theme-next-han source/lib/Han
+git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton
+git clone https://github.com/theme-next/theme-next-pace source/lib/pace
 
 ## Built With
 
