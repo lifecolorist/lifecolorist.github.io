@@ -1,0 +1,57 @@
+description: "Everything not saved will be lost."
+
+menu:
+  home: / || home
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  
+scheme: Mist
+#scheme: Gemini
+sidebar:
+  # Sidebar Display, available value (only for Muse | Mist):
+  #  - post    expand on posts automatically. Default.
+  #  - always  expand for all pages automatically
+  #  - hide    expand only when click on the sidebar toggle icon.
+  #  - remove  Totally remove sidebar including sidebar toggle.
+  display: hide
+  onmobile: true
+social:
+  GitHub: https://github.com/lifecolorist || github
+  E-Mail: mailto:lifecolorist@gmail.com || envelope
+avatar: /images/avatar.png
+# Declare license on posts
+post_copyright:
+  enable: true
+  license: CC BY-NC 4.0
+  license_url: https://creativecommons.org/licenses/by-nc/4.0
+#pace_theme: pace-theme-minimal
+motion:
+  async: true
+pace: true
+
+# Local search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
+  # if auto, trigger search by changing input
+  # if manual, trigger search by pressing enter key or search button
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+# Han Support
+# Dependencies: https://github.com/theme-next/theme-next-han
+han: true
+
+# Pangu Support
+# Dependencies: https://github.com/theme-next/theme-next-pangu
+# For more information: https://github.com/vinta/pangu.js
+pangu: true
+footer:
+  # Specify the date when the site was setup.
+  # If not defined, current year will be used.
+  since: 2016
+
+  # Icon between year and copyright info.
+  icon: heart
